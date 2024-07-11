@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply text-main;
+}
+.active a {
+  @apply text-main lg:border-main lg:rounded-2xl transition-[0.7s];
+}
+.cursor-pointer a{
+    @apply lg:hover:text-main transition-[0.7s] ;
+}
+.largescreen {
+  @apply lg:px-8 lg:py-1 lg:m-0 font-bold lg:hover:border-main rounded-2xl transition-[0.7s];
+}
+

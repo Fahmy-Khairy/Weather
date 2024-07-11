@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- teilwind --> 
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="bg-mybg">
+    <!-- start Navbar -->
+    <nav class="py-10 text-white px-2 lg:flex lg:justify-between lg:w-4/5 mx-auto md:px-0">
+      <div class="flex justify-between items-center">
+        <a href="#" class="flex">
+          <img src="./images/logo2x.png" class="w-16 mr-2"  alt="Weather">
+          <div>
+            <h1 class="font-bold">Weather</h1>
+            <p class="font-thin text-sm text-opacity-30">tagline goes here</p>
+          </div>
+        </a>
+        <button class="lg:hidden nav-toggle mr-5 w-10 h-10 border text-center rounded-full hover:border-main group transition-[0.7s]">
+          <i class="fa-solid fa-bars group-hover:text-main transition-[0.7s]"></i>
+      </button>
+      </div>
+      <div class="px-2 my-5 text-center list-anchor hidden lg:block lg:px-0 ">
+        <ul class="divide-y-2 divide-solid divide-mybg bg-[#323544] rounded-md lg:flex lg:divide-0 lg:bg-transparent" >
+          <li class="cursor-pointer bg-opacity-50 my-1 p-2 active">
+            <a href="#" class="largescreen border-2 border-transparent">Home</a>
+          </li>
+          <li class="cursor-pointer bg-opacity-50 my-1 p-2">
+            <a href="#" class="largescreen border-2 border-transparent">News</a>
+          </li>
+          <li class="cursor-pointer bg-opacity-50 my-1 p-2">
+            <a href="#" class="largescreen border-2 border-transparent">Live Cameras</a>
+          </li>
+          <li class="cursor-pointer bg-opacity-50 my-1 p-2">
+            <a href="#" class="largescreen border-2 border-transparent">Photos</a>
+          </li>
+          <li class="cursor-pointer bg-opacity-50 my-1 p-2">
+            <a href="#" class="largescreen border-2 border-transparent">Contect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end Navbar -->
+     <section class="bg-bgimg bg-no-repeat py-36 bg-cover px-2 relative lg:px-[10%]">
+      <input type="text" placeholder="Find Your Location...." class=" searchBox bg-mybg px-5 py-4 text-white rounded-2xl w-full focus:outline-none  ">
+      <button class="bg-main px-7 py-3 rounded-full text-white absolute translate-x-[-110%] translate-y-[4px]">Find</button>
+    </section>
+    
+    <article class="relative translate-y-[-15%] rounded-lg lg:mx-auto lg:translate-y-[-20%] lg:w-4/5 my-content">
+      <!-- <div class="bg-gray-700 mt-5 rounded-lg lg:flex">
+
+          <div class="pb-4 text-white bg-mybg bg-opacity-70 lg:p-0 lg:w-1/3 lg:pb-5 ">
+            <div class="flex w-full justify-between text-gray-400 py-2 px-3 bg-gray-700  ">
+              <p>Sunday</p>
+              <p>7July</p>
+            </div>
+            <h2 class="text-gray-400 ml-3 mt-5">Cairo</h2>
+            <p class="text-8xl lg:text-9xl ml-3">31.5</p>
+             <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" class="ml-4" alt="weather">
+            <p class="mt-4 font-thin text-main ml-3 lg:mb-4">Clear</p>
+            <div class="flex text-gray-400 gap-6 ml-3">
+              <div>
+                <i class="fa-solid fa-cloud-rain"></i>
+                <span>20%</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cloud-rain"></i>
+                <span>20%</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cloud-rain"></i>
+                <span>20%</span>
+              </div>
+            </div>
+          </div>
+        
+        <div class="text-center lg:w-1/3">
+          <h2 class="bg-gray-600 text-gray-300 py-2">nextday</h2>
+          <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" class="mx-auto" alt="weather">
+          <h3 class="text-[20px] text-white">الدرجة العظمة</h3>
+          <h4 class="text-gray-300">الصغرى</h4>
+          <p class="text-main mt-2">sunny</p>
+        </div>
+
+        <div class="text-center mt-3 lg:m-0 bg-mybg bg-opacity-70 lg:w-1/3 pb-3 ">
+          <h2 class="bg-gray-600 text-gray-300 py-2">nextday2</h2>
+          <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" class="mx-auto" alt="weather">
+          <h3 class="text-[20px] text-white">الدرجة العظمة</h3>
+          <h4 class="text-gray-300">الصغرى</h4>
+          <p class="text-main mt-2">sunny</p>
+        </div>
+      </div> -->
+    </article>
+    <footer class="mt-10 bg-gray-600 bg-opacity-70 py-10">
+      <div class="lg:w-4/5 mx-auto lg:flex">
+        <div class="lg:w-2/3 relative">
+          <input type="text" placeholder="Enter your email to subscribe...." class="bg-mybg px-6 py-4 text-white rounded-full w-full focus:outline-none  ">
+          <button class="bg-main px-7 py-3 rounded-full text-white absolute translate-x-[-105%] translate-y-[4px]">Subscribe</button>
+        </div>
+        <div class="lg:w-1/3 pt-2">
+          <ul class="flex gap-2 justify-center">
+            <li class="w-[40px] h-[40px] hover:text-white hover:bg-main rounded-full bg-mybg text-main flex justify-center items-center">
+              <i class="fa-brands text-2xl fa-facebook"></i>
+            </li>
+            <li class="w-[40px] h-[40px] hover:text-white hover:bg-main rounded-full bg-mybg text-main flex justify-center items-center">
+              <i class="fa-brands text-2xl fa-twitter"></i>
+            </li>
+            <li class="w-[40px] h-[40px] hover:text-white hover:bg-main rounded-full bg-mybg text-main flex justify-center items-center">
+              <i class="fa-brands text-2xl fa-google-plus-g"></i>
+            </li>
+            <li class="w-[40px] h-[40px] hover:text-white hover:bg-main rounded-full bg-mybg text-main flex justify-center items-center">
+              <i class="fa-brands text-2xl fa-pinterest"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="lg:w-4/5 mx-auto text-gray-400 mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </footer>
+     <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script> 
+  </body>
+</html>
