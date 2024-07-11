@@ -20,6 +20,9 @@ if (navigator.geolocation) {
     // console.log(pos.coords.longitude);
   });
 }
+else {
+  alert('Open your location')
+}
 
 // fetch data
 
@@ -30,7 +33,7 @@ async function getWeatherData(myLocation) {
   const data = await response.json();
   getDateWeather(data);
   displayWeather(data);
-  // console.log(data);
+  console.log(data); 
 }
 // search box====================
 
