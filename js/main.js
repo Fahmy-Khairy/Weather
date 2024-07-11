@@ -25,7 +25,7 @@ if (navigator.geolocation) {
 
 async function getWeatherData(myLocation) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=8c3e231ee78246f5a96210446240707&q=${myLocation}&days=3&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=8c3e231ee78246f5a96210446240707&q=${myLocation}&days=3&aqi=no&alerts=no`
   );
   const data = await response.json();
   getDateWeather(data);
